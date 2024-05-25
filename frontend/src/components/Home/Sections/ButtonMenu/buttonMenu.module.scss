@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+
+.Button_menu {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 6px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.Button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #daa97f;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.534);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Merienda', cursive;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 392px;
+
+  p {
+    padding: 0px 12px;
+  }
+
+  &:hover {
+    background-color: #c98b5a;
+  } 
+
+  .arrow {
+    font-size: 24px;
+    margin-right: 8px;
+  }
+}
+
+@media (min-width: 768px) {
+  .Button-menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .Button {
+    width: calc(50% - 12px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .Button-menu {
+    justify-content: space-between;
+  }
+
+  .Button {
+    width: calc(33.33% - 12px);
+  }
+}

@@ -1,0 +1,38 @@
+.menu {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 0 auto;
+  
+    .titulo {
+      font-size: 24px;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+  
+    .items {
+      list-style: none;
+      padding: 0;
+  
+      li {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0;
+        border-bottom: 1px solid #ddd;
+  
+        div {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+  
+          span {
+            margin-left: 10px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+  

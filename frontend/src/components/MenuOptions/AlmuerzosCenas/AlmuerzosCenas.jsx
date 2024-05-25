@@ -26,7 +26,10 @@ export default function AlmuerzosCenas() {
       <div className='almuerzos-cenas-header'>
         <Header />
       </div>
-      <div className='almuerzos-cenas-menu'>
+      <div className='Boton_retroceso'>
+        <button className='Boton' onClick={() => navigate(-1)}>Atras</button>
+      </div>
+      <div className='Button-menu'>
         {menuItems.map((item, index) => (
           <button
             key={index}

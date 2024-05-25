@@ -1,5 +1,8 @@
 import React from 'react'
+import './Bebidas.scss'
 import BebidasItems from './BebidasItems/BebidasItems';
+import Header from '../AlmuerzosCenas/Header/Header';
+import { useNavigate } from 'react-router-dom';
 
 export default function Bebidas() {
 
@@ -26,28 +29,37 @@ export default function Bebidas() {
 
   ];
 
+  const navigate = useNavigate('/');
+
   return (
-    <div className='menu'>
-      <h2 className='titulo'>Con Alcohol</h2>
-      <ul className='items'>
-        {ConAlcohol_items.map((items, index) => (
-          <BebidasItems
-            key={index}
-            name={items.name}
-            price={items.price}
-          />
-        ))}
-      </ul>
-      <h2 className='titulo'>Sin Alcohol</h2>
-      <ul className='items'>
-        {SinAlcohol_items.map((items, index) => (
-          <BebidasItems
-            key={index}
-            name={items.name}
-            price={items.price}
-          />
-        ))}
-      </ul>
+    <div className="">
+      <Header />
+      <div className='Boton_retroceso'>
+        <button className='Boton' onClick={() => navigate(-1)}>Atras</button>
+      </div>
+      <div className='menu'>
+        <h2 className='titulo'>Con Alcohol</h2>
+        <ul className='items'>
+          {ConAlcohol_items.map((items, index) => (
+            <BebidasItems
+              key={index}
+              name={items.name}
+              price={items.price}
+            />
+          ))}
+        </ul>
+        <h2 className='titulo'>Sin Alcohol</h2>
+        <ul className='items'>
+          {SinAlcohol_items.map((items, index) => (
+            <BebidasItems
+              key={index}
+              name={items.name}
+              price={items.price}
+            />
+          ))}
+        </ul>
+      </div>
     </div>
+
   )
 }

@@ -1,23 +1,24 @@
 // Variables
 $background-primary: #ffffff;
-$background-secondary: #000000;
+$background-secondary: #666666;
 $background-terceary: #7e7e7e;
 $text-color: #464646;
 $button-menu-primary: #daa97f;
 
 .Header {
-  background-color: $background-terceary;
-  height: 170px;
+  background-color: $background-primary;
+  height: 150px;
 
   .Logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 2px solid #000000;
-    border-left: 2px solid #000000;
-    border-right: 2px solid #000000;
+    border-bottom: 2px solid $background-secondary;
+    border-left: 2px solid $background-secondary;
+    border-right: 2px solid $background-secondary;
+    border-radius: 8px;
     box-shadow: 0 0 6px inset #000000;
-    height: 110px;
+    height: 90px;
     position: relative;
 
     img {

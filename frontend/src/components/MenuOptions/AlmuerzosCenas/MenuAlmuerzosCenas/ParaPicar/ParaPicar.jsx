@@ -1,5 +1,8 @@
 import React from 'react'
+import './ParaPicar.scss'
 import ParaPicarItems from './ParaPicarItems/ParaPicarItems';
+import Header from '../../Header/Header';
+import { useNavigate } from 'react-router-dom';
 
 export default function ParaPicar() {
 
@@ -13,18 +16,27 @@ export default function ParaPicar() {
 
   ];
 
+  const navigate = useNavigate('/');
+
   return (
-    <div className='menu'>
-      <h2 className='titulo'>Para Picar</h2>
-      <ul className='items'>
-        {Picar_Items.map((item, index) => (
-          <ParaPicarItems
-            key={index}
-            name={item.name}
-            price={item.price}
-          />
-        ))}
-      </ul>
+    <div className="">
+      <Header />
+      <div className='Boton_retroceso'>
+        <button className='Boton' onClick={() => navigate(-1)}>Atras</button>
+      </div>
+      <div className='menu'>
+        <h2 className='titulo'>Para Picar</h2>
+        <ul className='items'>
+          {Picar_Items.map((item, index) => (
+            <ParaPicarItems
+              key={index}
+              name={item.name}
+              price={item.price}
+            />
+          ))}
+        </ul>
+      </div>
     </div>
+
   )
 }

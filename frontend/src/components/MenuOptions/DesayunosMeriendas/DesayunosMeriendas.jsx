@@ -1,6 +1,9 @@
 import React from 'react'
+import './DesayunosMeriendas.scss'
 import DesayunosMeriendasItems from './DesayunosMeriendasItems/DesayunosMeriendasItems';
 import AgregadosItems from './AgregadosItems/AgregadosItems';
+import Header from '../AlmuerzosCenas/Header/Header';
+import { useNavigate } from 'react-router-dom';
 
 export default function DesayunosMeriendas() {
 
@@ -28,30 +31,39 @@ export default function DesayunosMeriendas() {
     { name: 'Proporcionado Queso / Mermelada', price: '$1000' }
 
   ];
+  
+  const navigate = useNavigate('/');
 
   return (
-    <div className='menu'>
-      <h2 className='titulo'>Desayunos y Meriendas</h2>
-      <ul className='items'>
-        {DM_items.map((items, index) => (
-          <DesayunosMeriendasItems
-            key={index}
-            name={items.name}
-            price={items.price}
-          />
-        ))}
-      </ul>
-      <h2 className='titulo'>Agregados</h2>
-      <ul className='items'>
-        {A_items.map((items, index) => (
-          <AgregadosItems
-            key={index}
-            name={items.name}
-            price={items.price}
-          />
-        ))}
-      </ul>
+    <div className="">
+      <Header />
+      <div className='Boton_retroceso'>
+        <button className='Boton' onClick={() => navigate(-1)}>Atras</button>
+      </div>
+      <div className='menu'>
+        <h2 className='titulo'>Desayunos y Meriendas</h2>
+        <ul className='items'>
+          {DM_items.map((items, index) => (
+            <DesayunosMeriendasItems
+              key={index}
+              name={items.name}
+              price={items.price}
+            />
+          ))}
+        </ul>
+        <h2 className='titulo'>Agregados</h2>
+        <ul className='items'>
+          {A_items.map((items, index) => (
+            <AgregadosItems
+              key={index}
+              name={items.name}
+              price={items.price}
+            />
+          ))}
+        </ul>
 
+      </div>
     </div>
+
   )
 }

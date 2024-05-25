@@ -1,5 +1,8 @@
 import React from 'react'
+import './Licuados.scss'
 import LicuadosItems from './LicuadosItems/LicuadosItems';
+import Header from '../AlmuerzosCenas/Header/Header';
+import { useNavigate } from 'react-router-dom';
 
 export default function Licuados() {
 
@@ -12,8 +15,15 @@ export default function Licuados() {
 
   ];
 
+  const navigate = useNavigate('/');
+
   return (
-    <div className='menu'>
+    <div className="">
+      <Header />
+      <div className='Boton_retroceso'>
+        <button className='Boton' onClick={() => navigate(-1)}>Atras</button>
+      </div>
+      <div className='menu'>
       <h2 className='titulo'>Licuados</h2>
       <ul className='items'>
         {L_items.map((item, index) =>
@@ -23,6 +33,7 @@ export default function Licuados() {
             price={item.price}
           />)}
       </ul>
+    </div>
     </div>
   )
 }

@@ -1,5 +1,7 @@
 import React from 'react'
 import PizzaItem from './PizzasItems/PizzasItems';
+import Header from '../../Header/Header';
+import { useNavigate } from 'react-router-dom';
 
 export default function Pizzas() {
 
@@ -15,19 +17,28 @@ export default function Pizzas() {
 
   ];
 
+  const navigate = useNavigate('/');
+
   return (
-    <div className='menu'>
-      <h2 className='titulo'>Pizzas</h2>
-      <ul className='items'>
-        {P_Items.map((item, index) => (
-          <PizzaItem 
-            key={index}
-            name={item.name}
-            price1={item.price1}
-            price2={item.price2}
-          />
-        ))}
-      </ul>
+    <div className="">
+      <Header />
+      <div className='Boton_retroceso'>
+        <button className='Boton' onClick={() => navigate(-1)}>Atras</button>
+      </div>
+      <div className='menu'>
+        <h2 className='titulo'>Pizzas</h2>
+        <ul className='items'>
+          {P_Items.map((item, index) => (
+            <PizzaItem
+              key={index}
+              name={item.name}
+              price1={item.price1}
+              price2={item.price2}
+            />
+          ))}
+        </ul>
+      </div>
     </div>
+
   )
 }

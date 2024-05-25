@@ -9,29 +9,29 @@ export default function CafeteriaPanaderia() {
 
   const Ca_items = [
 
-    { name: "Café/Cortado", price: "$1300" },
-    { name: "Café en jarrita", price: "$1400" },
-    { name: "Café con leche", price: "$1400" },
-    { name: "Cortado doble", price: "$1600" },
-    { name: "Macchiato", price: "$1800" },
-    { name: "Lagrima", price: "$1600" },
-    { name: "Cappuchino", price: "$2100" },
-    { name: "Té con Leche", price: "$1600" },
-    { name: "Té", price: "$1300" },
-    { name: "Mate cocido", price: "$1300" },
-    { name: "Submarino", price: "$2100" }
+    { name: "Café/Cortado", descripcion: "Café o Café con leche Chico", price: "$1300" },
+    { name: "Café en jarrita", descripcion: "Café o Café con leche en Jarrita", price: "$1400" },
+    { name: "Café con leche", descripcion: "Grande", price: "$1400" },
+    { name: "Cortado doble", descripcion: "Doble ración de café", price: "$1600" },
+    { name: "Macchiato", descripcion: "Café con espuma", price: "$1800" },
+    { name: "Lagrima", descripcion: "Poco café y mucha leche", price: "$1600" },
+    { name: "Cappuchino", descripcion: "Café con leche y mucha espuma con canela o chocolate", price: "$2100" },
+    { name: "Té con Leche", descripcion: "", price: "$1600" },
+    { name: "Té", descripcion: "", price: "$1300" },
+    { name: "Mate cocido", descripcion: "", price: "$1300" },
+    { name: "Submarino", descripcion: "", price: "$2100" }
 
   ];
 
   const P_items = [
 
-    { name: "Tortilla", price: "$600" },
-    { name: "Tostadas", price: "$600" },
-    { name: "Medialunas", price: "$2100" },
-    { name: "Medialunas con jamón y queso", price: "$1400" },
-    { name: "Croissant", price: "$2100" },
-    { name: "Croissant con jamón y queso", price: "$2100" },
-    { name: "Alfajores (Consultar variedad)", price: "$2100" }
+    { name: "Tortilla", descripcion: "Negra, negra con semilla, de campo, pan francés", price: "$600" },
+    { name: "Tostadas", descripcion: "", price: "$600" },
+    { name: "Medialunas", descripcion: "", price: "$2100" },
+    { name: "Medialunas con jamón y queso", descripcion: "", price: "$1400" },
+    { name: "Croissant", descripcion: "", price: "$2100" },
+    { name: "Croissant con jamón y queso", descripcion: "", price: "$2100" },
+    { name: "Alfajores", descripcion: "(Consultar variedad)", price: "$2100" }
 
   ];
 
@@ -51,16 +51,18 @@ export default function CafeteriaPanaderia() {
               key={index}
               name={item.name}
               price={item.price}
+              descripcion={item.descripcion}
             />
           ))}
         </ul>
         <h2 className={style.titulo}>Panaderia</h2>
         <ul className={style.items}>
-          {P_items.map((items, index) => (
+          {P_items.map((item, index) => (
             <PanaderiaItems
               key={index}
-              name={items.name}
-              price={items.price}
+              name={item.name}
+              price={item.price}
+              descripcion={item.descripcion}
             />
           ))}
         </ul>

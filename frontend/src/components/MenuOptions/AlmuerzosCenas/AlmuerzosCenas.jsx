@@ -6,11 +6,10 @@ import Footer from './Footer/Footer';
 
 const menuItems = [
 
-  { name: 'Al Plato', route: '/al-plato' },
+{ name: 'Para Picar', route: '/para-picar' },
   { name: 'Pizzas', route: '/pizzas' },
-  { name: 'Para Picar', route: '/para-picar' },
-  { name: 'Hamburguesas y Sandwiches', route: '/hamburguesas-y-sandwiches' }
-
+  { name: 'Hamburguesas y Sandwiches', route: '/hamburguesas-y-sandwiches' },
+  { name: 'Al Plato', route: '/al-plato' }
 ];
 
 export default function AlmuerzosCenas() {

@@ -8,13 +8,14 @@ export default function Pizzas() {
 
   const P_Items = [
 
-    { name: "Común / Muzarella", price1: "$6000", price2: "$3400" },
-    { name: "Especial", price1: "$6300", price2: "$3600" },
-    { name: "Fugazzeta", price1: "$6300", price2: "$3700" },
-    { name: "Napolitana", price1: "$5500", price2: "$3700" },
-    { name: "Ternera", price1: "$7500", price2: "$4200" },
-    { name: "Calabresa", price1: "$7500", price2: "$4200" },
-    { name: "Rúcula", price1: "???", price2: "???" }
+    
+    { name: "Común / Muzarella", descripcion:"Queso muzzarella + Aceitunas", price1: "$6000", price2: "$3400" },
+    { name: "Especial", descripcion:"Queso muzzarella, Jamón cocido + Aceitunas y Morrones", price1: "$6300", price2: "$3600" },
+    { name: "Fugazzeta", descripcion:"Queso muzzarella + Cebolla + Aceitunas", price1: "$6300", price2: "$3700" },
+    { name: "Napolitana", descripcion:"Queso muzzarella + Tomate + Jamón cocido + Aceitunas y Morrones", price1: "$5500", price2: "$3700" },
+    { name: "Ternera", descripcion:"Queso muzzarella + Ternera + Aceitunas y Morrones", price1: "$7500", price2: "$4200" },
+    { name: "Calabresa", descripcion:"Queso muzzarella + Peperoni + Aceitunas", price1: "$7500", price2: "$4200" },
+    { name: "Rúcula", descripcion:"Queso muzzarella + Rúcula + Tomate", price1: "???", price2: "???" }
 
   ];
 
@@ -28,6 +29,10 @@ export default function Pizzas() {
       </div>
       <div className={style.menu}>
         <h2 className={style.titulo}>Pizzas</h2>
+        <div className={style.preciosBox}>
+          <p>8 porc</p>
+          <p>4 porc</p>
+        </div>
         <ul className={style.items}>
           {P_Items.map((item, index) => (
             <PizzaItem
@@ -35,6 +40,7 @@ export default function Pizzas() {
               name={item.name}
               price1={item.price1}
               price2={item.price2}
+              descripcion={item.descripcion}
             />
           ))}
         </ul>

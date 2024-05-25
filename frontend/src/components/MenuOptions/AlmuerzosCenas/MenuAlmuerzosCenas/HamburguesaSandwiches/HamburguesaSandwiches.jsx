@@ -10,25 +10,25 @@ export default function HamburguesaSandwiches() {
 
   const hamburguesaItems = [
 
-    { name: "Común / Clásica", price: "$4000" },
-    { name: "Super", price: "$4900" },
-    { name: "Ruca", price: "$5100" }
+    { name: "Común / Clásica", descripcion:"Con lechuga, tomate y aderezos", price: "$4000" },
+    { name: "Super", descripcion:"Con Jamón, queso, lechuga, tomate y aderezos", price: "$4900" },
+    { name: "Ruca", descripcion:"Con Huevo, jamón, queso, lechuga, tomate y aderezos + Papas Fritas", price: "$5100" }
 
   ];
 
   const lomitoItems = [
 
-    { name: "Común / Clásica", price: "$5400" },
-    { name: "Super", price: "$5900" },
-    { name: "Ruca", price: "$6800" }
+    { name: "Común / Clásica", descripcion:"Con lechuga, tomate y aderezos", price: "$5400" },
+    { name: "Super", descripcion:"Con Jamón, queso, lechuga, tomate y aderezos", price: "$5900" },
+    { name: "Ruca", descripcion:"Con Huevo, jamón, queso, lechuga, tomate y aderezos + Papas Fritas", price: "$6800" }
 
   ];
 
   const milanesaItems = [
 
-    { name: "Común / Clásica", price: "$4000" },
-    { name: "Super", price: "$4500" },
-    { name: "Ruca", price: "$5000" }
+    { name: "Común / Clásica", descripcion:"Con lechuga, tomate y aderezos", price: "$4000" },
+    { name: "Super", descripcion:"Con Jamón, queso, lechuga, tomate y aderezos", price: "$4500" },
+    { name: "Ruca", descripcion:"Con Huevo, jamón, queso, lechuga, tomate y aderezos + Papas Fritas", price: "$5000" }
 
   ];
 
@@ -48,6 +48,7 @@ export default function HamburguesaSandwiches() {
               key={index}
               name={item.name}
               price={item.price}
+              descripcion={item.descripcion}
             />
           ))}
         </ul>
@@ -58,6 +59,7 @@ export default function HamburguesaSandwiches() {
               key={index}
               name={item.name}
               price={item.price}
+              descripcion={item.descripcion}
             />
           ))}
         </ul>
@@ -68,6 +70,7 @@ export default function HamburguesaSandwiches() {
               key={index}
               name={item.name}
               price={item.price}
+              descripcion={item.descripcion}
             />
           ))}
         </ul>

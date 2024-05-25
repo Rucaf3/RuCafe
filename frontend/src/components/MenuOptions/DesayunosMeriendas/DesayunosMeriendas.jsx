@@ -43,21 +43,22 @@ export default function DesayunosMeriendas() {
       <div className={style.menu}>
         <h2 className={style.titulo}>Desayunos y Meriendas</h2>
         <ul className={style.items}>
-          {DM_items.map((items, index) => (
+          {DM_items.map((item, index) => (
             <DesayunosMeriendasItems
               key={index}
-              name={items.name}
-              price={items.price}
+              name={item.name}
+              price={item.price}
+              descripcion={item.description}
             />
           ))}
         </ul>
         <h2 className={style.titulo}>Agregados</h2>
         <ul className={style.items}>
-          {A_items.map((items, index) => (
+          {A_items.map((item, index) => (
             <AgregadosItems
               key={index}
-              name={items.name}
-              price={items.price}
+              name={item.name}
+              price={item.price}
             />
           ))}
         </ul>

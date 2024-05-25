@@ -8,11 +8,11 @@ export default function ParaPicar() {
 
   const Picar_Items = [
 
-    { name: "Empanadas de Carne o Pollo", price: "$800" },
-    { name: "Porción de papas fritas", price: "$3500" },
-    { name: "Porción de papas fritas c/ queso gratinado", price: "$4500" },
-    { name: "Porción de papas fritas c/ queso gratinado + jamón", price: "$5000" },
-    { name: "Picada Grande", price: "$17000" }
+    { name: "Empanadas de Carne o Pollo", descripcion:"", price: "$800" },
+    { name: "Porción de papas fritas", descripcion:"", price: "$3500" },
+    { name: "Porción de papas fritas c/ queso gratinado", descripcion:"", price: "$4500" },
+    { name: "Porción de papas fritas c/ queso gratinado + jamón", descripcion:"", price: "$5000" },
+    { name: "Picada Grande", descripcion:"Queso, Jamón cocido, Roquefort, Ternera, Aceitunas, Mila, Papas y Salame", price: "$17000" }
 
   ];
 
@@ -32,6 +32,7 @@ export default function ParaPicar() {
               key={index}
               name={item.name}
               price={item.price}
+              descripcion={item.descripcion}
             />
           ))}
         </ul>

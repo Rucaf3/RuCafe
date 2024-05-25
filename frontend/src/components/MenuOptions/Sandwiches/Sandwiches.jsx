@@ -8,14 +8,14 @@ export default function Sandwiches() {
 
   const S_items = [
 
-    { name: "1/2 Jamón y Queso", price: "$1900" },
-    { name: "Triple Jamón y Queso", price: "$3000" },
-    { name: "Triple Jamón, Queso y Tomate", price: "$3200" },
-    { name: "Triple de Ternera y Queso", price: "$3600" },
-    { name: "Triple de Ternera, queso y tomate", price: "$3600" },
-    { name: "Triple de Ternera + Lechuga y Tomate", price: "$3800" },
-    { name: "Triple de Pollo, Lechuga y Tomate", price: "$4600" },
-    { name: "Triple de Pollo, Queso y Tomate", price: "$3800" }
+    { name: "1/2 Jamón y Queso", descripcion: "", price: "$1900" },
+    { name: "Triple Jamón y Queso", descripcion: "", price: "$3000" },
+    { name: "Triple Jamón, Queso y Tomate", descripcion: "", price: "$3200" },
+    { name: "Triple de Ternera y Queso", descripcion: "", price: "$3600" },
+    { name: "Triple de Ternera, queso y tomate", descripcion: "", price: "$3600" },
+    { name: "Triple de Ternera + Lechuga y Tomate", descripcion: "", price: "$3800" },
+    { name: "Triple de Pollo, Lechuga y Tomate", descripcion: "", price: "$4600" },
+    { name: "Triple de Pollo, Queso y Tomate", descripcion: "", price: "$3800" }
 
   ];
 

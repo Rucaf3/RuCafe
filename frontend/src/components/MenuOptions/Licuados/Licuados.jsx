@@ -8,10 +8,10 @@ export default function Licuados() {
 
   const L_items = [
 
-    { name: "Licuado Chocolate", price: "$2000" },
-    { name: "Licuado Simple", price: "$2000" },
-    { name: "Licuado Especial con jugo de naranja", price: "$2300" },
-    { name: "Frozzen Frutal", price: "$2500" }
+    { name: "Licuado Chocolate", descripcion: "Leche + Chocolate + Hielo", price: "$2000" },
+    { name: "Licuado Simple (con leche o con agua)", descripcion: "Banana, frutilla, durazno, ananá, maracuyá", price: "$2000" },
+    { name: "Licuado Especial con jugo de naranja", descripcion: "Frutilla, durazno, maracuyá", price: "$2300" },
+    { name: "Frozzen Frutal (con leche o con agua)", descripcion: "Incluye mix de banana, frutilla, durazno, ananá, maracuyá", price: "$2500" }
 
   ];
 
@@ -31,6 +31,7 @@ export default function Licuados() {
             key={index}
             name={item.name}
             price={item.price}
+            descripcion={item.descripcion}
           />)}
       </ul>
     </div>

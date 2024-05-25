@@ -41,6 +41,12 @@
       } 
     }
     
+    .preciosBox{
+      display: flex;
+      gap: 22px;
+      justify-content: flex-end;
+    }
+    
   .menu {
       padding: 20px;
       background-color: #cdcccc8c;
@@ -67,6 +73,10 @@
     
           span {
             font-weight: bold;
+          }
+          
+          p{
+            margin: 0;
           }
         }
       }

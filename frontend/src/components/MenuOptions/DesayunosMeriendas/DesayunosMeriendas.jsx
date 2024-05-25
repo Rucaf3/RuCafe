@@ -1,5 +1,5 @@
 import React from 'react'
-import './DesayunosMeriendas.scss'
+import style from './DesayunosMeriendas.module.scss'
 import DesayunosMeriendasItems from './DesayunosMeriendasItems/DesayunosMeriendasItems';
 import AgregadosItems from './AgregadosItems/AgregadosItems';
 import Header from '../AlmuerzosCenas/Header/Header';
@@ -35,14 +35,14 @@ export default function DesayunosMeriendas() {
   const navigate = useNavigate('/');
 
   return (
-    <div className="">
+    <div className={style.DesayunosMeriendas}>
       <Header />
-      <div className='Boton_retroceso'>
-        <button className='Boton' onClick={() => navigate(-1)}>Atras</button>
+      <div className={style.Boton_retroceso}>
+        <button className={style.Boton} onClick={() => navigate(-1)}>Atras</button>
       </div>
-      <div className='menu'>
-        <h2 className='titulo'>Desayunos y Meriendas</h2>
-        <ul className='items'>
+      <div className={style.menu}>
+        <h2 className={style.titulo}>Desayunos y Meriendas</h2>
+        <ul className={style.items}>
           {DM_items.map((items, index) => (
             <DesayunosMeriendasItems
               key={index}
@@ -51,8 +51,8 @@ export default function DesayunosMeriendas() {
             />
           ))}
         </ul>
-        <h2 className='titulo'>Agregados</h2>
-        <ul className='items'>
+        <h2 className={style.titulo}>Agregados</h2>
+        <ul className={style.items}>
           {A_items.map((items, index) => (
             <AgregadosItems
               key={index}

@@ -45,7 +45,7 @@ export default function AlmuerzosCenas() {
           </button>
         ))}
       </div>
-      <div className='almuerzos-cenas-footer'>
+      <div className='footer'>
         <Footer />
       </div>
     </div>

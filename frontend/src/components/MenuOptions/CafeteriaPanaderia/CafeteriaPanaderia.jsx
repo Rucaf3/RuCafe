@@ -1,5 +1,5 @@
 import React from 'react'
-import './CafeteriaPanaderia.scss'
+import style from './CafeteriaPanaderia.module.scss'
 import CafeteriaItems from './CafeteriaItems/CafeteriaItems';
 import PanaderiaItems from './PanaderiaItems/PanaderiaItems';
 import Header from '../AlmuerzosCenas/Header/Header';
@@ -38,14 +38,14 @@ export default function CafeteriaPanaderia() {
   const navigate = useNavigate('/');
 
   return (
-    <div className="">
+    <div className={style.CafeteriaPanaderia}>
       <Header />
-      <div className='Boton_retroceso'>
-        <button className='Boton' onClick={() => navigate(-1)}>Atras</button>
+      <div className={style.Boton_retroceso}>
+        <button className={style.Boton} onClick={() => navigate(-1)}>Atras</button>
       </div>
-      <div className='menu'>
-        <h2 className='titulo'>Cafeteria</h2>
-        <ul className='items'>
+      <div className={style.menu}>
+        <h2 className={style.titulo}>Cafeteria</h2>
+        <ul className={style.items}>
           {Ca_items.map((item, index) => (
             <CafeteriaItems
               key={index}
@@ -54,13 +54,13 @@ export default function CafeteriaPanaderia() {
             />
           ))}
         </ul>
-        <h2 className='titulo'>Panaderia</h2>
-        <ul className='items'>
+        <h2 className={style.titulo}>Panaderia</h2>
+        <ul className={style.items}>
           {P_items.map((items, index) => (
             <PanaderiaItems
               key={index}
               name={items.name}
-              price={item.price}
+              price={items.price}
             />
           ))}
         </ul>

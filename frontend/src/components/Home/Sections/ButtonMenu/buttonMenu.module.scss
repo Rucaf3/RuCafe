@@ -3,13 +3,8 @@
 .Button_menu {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  gap: 8px;
-  padding: 6px;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  box-sizing: border-box;
+  gap: 12px;
+  padding: 20px;
 }
 
 .Button {
@@ -26,8 +21,6 @@
   color: #333;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  width: 100%;
-  max-width: 392px;
 
   p {
     padding: 0px 12px;
@@ -35,7 +28,7 @@
 
   &:hover {
     background-color: #c98b5a;
-  } 
+  }
 
   .arrow {
     font-size: 24px;
@@ -43,24 +36,3 @@
   }
 }
 
-@media (min-width: 768px) {
-  .Button-menu {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .Button {
-    width: calc(50% - 12px);
-  }
-}
-
-@media (min-width: 1024px) {
-  .Button-menu {
-    justify-content: space-between;
-  }
-
-  .Button {
-    width: calc(33.33% - 12px);
-  }
-}

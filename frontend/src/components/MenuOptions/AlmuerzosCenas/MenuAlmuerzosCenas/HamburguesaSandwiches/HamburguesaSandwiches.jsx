@@ -1,5 +1,5 @@
 import React from 'react'
-import './HamburguesaSandwiches.scss'
+import style from'./HamburguesaSandwiches.module.scss'
 import HamburguesasItems from './HamburguesasItems/HamburguesasItems';
 import MilanesasItems from './MilanesasItems/MilanesasItems';
 import LomitosItems from './LomitosItems/LomitosItems';
@@ -35,14 +35,14 @@ export default function HamburguesaSandwiches() {
   const navigate = useNavigate('/');
 
   return (
-    <div className="">
+    <div className={style.HamburguesasSandwiches}>
       <Header />
-      <div className='Boton_retroceso'>
-        <button className='Boton' onClick={() => navigate(-1)}>Atras</button>
+      <div className={style.Boton_retroceso}>
+        <button className={style.Boton} onClick={() => navigate(-1)}>Atras</button>
       </div>
-      <div className='menu'>
-        <h2 className='titulo'>Hamburguesas</h2>
-        <ul className='items'>
+      <div className={style.menu}>
+        <h2 className={style.titulo}>Hamburguesas</h2>
+        <ul className={style.items}>
           {hamburguesaItems.map((item, index) => (
             <HamburguesasItems
               key={index}
@@ -51,8 +51,8 @@ export default function HamburguesaSandwiches() {
             />
           ))}
         </ul>
-        <h2 className='titulo'>Milanesas</h2>
-        <ul className='items'>
+        <h2 className={style.titulo}>Milanesas</h2>
+        <ul className={style.items}>
           {milanesaItems.map((item, index) => (
             <MilanesasItems
               key={index}
@@ -61,8 +61,8 @@ export default function HamburguesaSandwiches() {
             />
           ))}
         </ul>
-        <h2 className='titulo'>Lomimtos</h2>
-        <ul className='items'>
+        <h2 className={style.titulo}>Lomitos</h2>
+        <ul className={style.items}>
           {lomitoItems.map((item, index) => (
             <LomitosItems
               key={index}

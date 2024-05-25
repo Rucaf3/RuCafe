@@ -34,19 +34,19 @@
       background-color: #c98b5a;
     } 
   }
-  
-.Button-menu {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  padding: 20px;
-}
 
 .footer{
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 8px 0px;
+}
+
+.Button-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
 }
 
 .Button {

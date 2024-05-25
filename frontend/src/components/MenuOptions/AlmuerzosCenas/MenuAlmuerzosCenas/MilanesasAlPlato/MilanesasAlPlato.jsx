@@ -1,5 +1,5 @@
 import React from 'react'
-import './MilanesasAlPlato.scss'
+import style from'./MilanesasAlPlato.module.scss'
 import MilanesasAlPlatoItems from './MilanesasAlPlatoItems/MilanesasAlPlatoItems'
 import Header from '../../Header/Header'
 import { useNavigate } from 'react-router-dom'
@@ -21,14 +21,14 @@ export default function MilanesasAlPlato() {
   const navigate = useNavigate('/');
 
   return (
-    <div className="">
+    <div className={style.MilanesasAlPlato}>
       <Header />
-      <div className='Boton_retroceso'>
-        <button className='Boton' onClick={() => navigate(-1)}>Atras</button>
+      <div className={style.Boton_retroceso}>
+        <button className={style.Boton} onClick={() => navigate(-1)}>Atras</button>
       </div>
-      <div className='menu'>
-        <h2 className='titulo'>Milanesas Al Plato</h2>
-        <ul className='items'>
+      <div className={style.menu}>
+        <h2 className={style.titulo}>Milanesas Al Plato</h2>
+        <ul className={style.items}>
           {Milanesas_Items.map((item, index) => (
             <MilanesasAlPlatoItems
               key={index}

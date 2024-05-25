@@ -1,5 +1,5 @@
 import React from 'react'
-import './Licuados.scss'
+import style from './Licuados.module.scss'
 import LicuadosItems from './LicuadosItems/LicuadosItems';
 import Header from '../AlmuerzosCenas/Header/Header';
 import { useNavigate } from 'react-router-dom';
@@ -18,14 +18,14 @@ export default function Licuados() {
   const navigate = useNavigate('/');
 
   return (
-    <div className="">
+    <div className={style.Licuados}>
       <Header />
-      <div className='Boton_retroceso'>
-        <button className='Boton' onClick={() => navigate(-1)}>Atras</button>
+      <div className={style.Boton_retroceso}>
+        <button className={style.Boton} onClick={() => navigate(-1)}>Atras</button>
       </div>
-      <div className='menu'>
-      <h2 className='titulo'>Licuados</h2>
-      <ul className='items'>
+      <div className={style.menu}>
+      <h2 className={style.titulo}>Licuados</h2>
+      <ul className={style.items}>
         {L_items.map((item, index) =>
           <LicuadosItems
             key={index}

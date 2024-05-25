@@ -1,5 +1,5 @@
 import React from 'react'
-import './Sandwiches.scss'
+import style from './Sandwiches.module.scss'
 import SandwichesItems from './SandwichesItems/SandwichesItems';
 import Header from '../AlmuerzosCenas/Header/Header';
 import { useNavigate } from 'react-router-dom';
@@ -24,14 +24,14 @@ export default function Sandwiches() {
 
 
   return (
-    <div className="">
+    <div className={style.Sandwiches}>
       <Header />
-      <div className='Boton_retroceso'>
-        <button className='Boton' onClick={() => navigate(-1)}>Atras</button>
+      <div className={style.Boton_retroceso}>
+        <button className={style.Boton} onClick={() => navigate(-1)}>Atras</button>
       </div>
-      <div className='menu'>
-        <h2 className='titulo'>Sandwiches</h2>
-        <ul className='items'>
+      <div className={style.menu}>
+        <h2 className={style.titulo}>Sandwiches</h2>
+        <ul className={style.items}>
           {S_items.map((item, index) => (
             <SandwichesItems
               key={index}

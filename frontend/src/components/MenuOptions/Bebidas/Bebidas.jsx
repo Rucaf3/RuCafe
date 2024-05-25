@@ -1,5 +1,5 @@
 import React from 'react'
-import './Bebidas.scss'
+import style from'./Bebidas.module.scss'
 import BebidasItems from './BebidasItems/BebidasItems';
 import Header from '../AlmuerzosCenas/Header/Header';
 import { useNavigate } from 'react-router-dom';
@@ -32,14 +32,14 @@ export default function Bebidas() {
   const navigate = useNavigate('/');
 
   return (
-    <div className="">
+    <div className={style.Bebidas}>
       <Header />
-      <div className='Boton_retroceso'>
-        <button className='Boton' onClick={() => navigate(-1)}>Atras</button>
+      <div className={style.Boton_retroceso}>
+        <button className={style.Boton} onClick={() => navigate(-1)}>Atras</button>
       </div>
-      <div className='menu'>
-        <h2 className='titulo'>Con Alcohol</h2>
-        <ul className='items'>
+      <div className={style.menu}>
+        <h2 className={style.titulo}>Con Alcohol</h2>
+        <ul className={style.items}>
           {ConAlcohol_items.map((items, index) => (
             <BebidasItems
               key={index}
@@ -48,8 +48,8 @@ export default function Bebidas() {
             />
           ))}
         </ul>
-        <h2 className='titulo'>Sin Alcohol</h2>
-        <ul className='items'>
+        <h2 className={style.titulo}>Sin Alcohol</h2>
+        <ul className={style.items}>
           {SinAlcohol_items.map((items, index) => (
             <BebidasItems
               key={index}

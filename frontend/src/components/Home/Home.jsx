@@ -12,7 +12,7 @@ export default function Home() {
           <div className="">
             <Header/>
           </div>
-          <div className={style.carousel}>
+          <div>
             <Carousel/>
           </div>
           <div className={style.buttonMenu}>

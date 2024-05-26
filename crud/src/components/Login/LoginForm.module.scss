@@ -1,71 +1,99 @@
-$background-pattern: url('path/to/your/background/image.png');
-
+// src/LoginForm.module.scss
 .loginContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-image: url('../../assets/Home.png');
-  background-size: cover;
-  height: 100vh;
   justify-content: center;
-}
-
-.logo {
-  font-family: 'Your Logo Font', sans-serif;
-  font-size: 3rem;
-  margin-bottom: 2rem;
+  align-items: center;
+  background-color: #f5b895;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .loginForm {
-  background: rgba(255, 153, 102, 0.9);
-  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
   border-radius: 10px;
-  box-shadow: 5px 5px 20px rgb(0, 0, 0);
-  
-  h2 {
-    font-family: 'Your Font', sans-serif;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    text-align: center;
-  }
+}
 
-  .inputGroup {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1rem;
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-    label {
-      font-size: 1rem;
-      margin-bottom: 0.5rem;
-    }
+.formGroup {
+  margin-bottom: 20px;
+}
 
-    input {
-      padding: 0.5rem;
-      border: none;
-      border-radius: 5px;
-      font-size: 1rem;
-    }
+.formGroup label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
 
-    .togglePassword {
-      position: absolute;
-      right: 10px;
-      top: calc(50% - 0.5rem);
-      cursor: pointer;
-    }
-  }
+.inputField{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+}
 
-  button {
-    width: 100%;
-    padding: 0.75rem;
-    border: none;
-    border-radius: 5px;
-    background-color: #333;
-    color: #fff;
-    font-size: 1rem;
-    cursor: pointer;
+.inputPassword {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  font-size: 16px;
+}
 
-    &:hover {
-      background-color: #555;
-    }
-  }
+.inputField::placeholder,
+.inputPassword::placeholder {
+  color: #ccc;
+}
+
+.passwordContainer {
+  display: flex;
+  align-items: center;
+}
+
+.toggleButton {
+  cursor: pointer;
+  padding: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #fff;
+}
+
+.toggleButton img {
+  width: 24px;
+  height: 24px;
+}
+
+.loginButton {
+  width: 100%;
+  padding: 15px;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.loginButton:hover {
+  background-color: #f0f0f0;
+}
+
+.logoContainer {
+  box-shadow: 4px 4px 10px #000000;
+  border-radius: 50%;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

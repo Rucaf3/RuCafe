@@ -1,5 +1,5 @@
-import React from 'react'
-import style from './DesayunosMeriendas.module.scss'
+import React from 'react';
+import style from './DesayunosMeriendas.module.scss';
 import DesayunosMeriendasItems from './DesayunosMeriendasItems/DesayunosMeriendasItems';
 import AgregadosItems from './AgregadosItems/AgregadosItems';
 import Header from '../AlmuerzosCenas/Header/Header';
@@ -8,37 +8,32 @@ import { useNavigate } from 'react-router-dom';
 export default function DesayunosMeriendas() {
 
   const DM_items = [
-
-    { name: 'CLASICO', price: '$1900', description: 'Infusión + 2 Tortillas o Medialunas' },
-    { name: 'LIGHT', price: '$2700', description: 'Infusión + Tostadas de Pan Lactal + Mermelada + Queso crema + Jugo de Naranja + Yogurt con granola' },
-    { name: 'EJECUTIVO', price: '$2600', description: 'Infusión + Tostadas en Pan Lactal + Queso blanco + Mermelada + Jugo de Naranja' },
-    { name: 'PROTEICO', price: '$3600', description: 'Infusión + Tostadas en Pan Lactal Negro + Huevo revuelto + Jamón cocido + Queso crema + Jugo de Naranja' },
+    { name: 'CLÁSICO', price: '$1900', description: 'Infusión + 2 Tortillas o Medialunas' },
+    { name: 'LIGHT', price: '$2700', description: 'Infusión + Tostadas de Pan Lactal + Mermelada + Queso Crema + Jugo de Naranja + Yogurt con Granola' },
+    { name: 'EJECUTIVO', price: '$2600', description: 'Infusión + Tostadas en Pan Lactal + Queso Blanco + Mermelada + Jugo de Naranja' },
+    { name: 'PROTEICO', price: '$3600', description: 'Infusión + Tostadas en Pan Lactal Negro + Huevo Revuelto + Jamón Cocido + Queso Crema + Jugo de Naranja' },
     { name: 'MAFALDA', price: '$3900', description: 'Infusión + 2 Medialunas de Jamón y Queso + Jugo de Naranja' },
-    { name: 'CONTINENTAL', price: '$3300', description: 'Infusión + Pan de campo + manteca, dulce de leche o mermelada + Jugo de Naranja + Ensalada de Fruta' },
+    { name: 'CONTINENTAL', price: '$3300', description: 'Infusión + Pan de Campo + Manteca, Dulce de Leche o Mermelada + Jugo de Naranja + Ensalada de Fruta' },
     { name: 'SALUDABLE', price: '$2500', description: 'Infusión + 2 Fetas de Queso + 2 Fetas de Jamón + Jugo de Naranja' },
     { name: 'SUPER RUCA', price: '$5000', description: 'Infusión + 1 Omelette + Jugo de Naranja' },
     { name: 'SIN TACC', price: '$2500', description: 'Infusión + Galletas de Arroz + Mermelada + Queso Untable' },
-    { name: 'DELICIA DE JAMON Y QUESO', price: '$3000', description: 'Infusión + 2 Fetas de Queso + 2 Fetas de Jamón + Tostadas de pan lactal negro' },
-
-
+    { name: 'DELICIA DE JAMÓN Y QUESO', price: '$3000', description: 'Infusión + 2 Fetas de Queso + 2 Fetas de Jamón + Tostadas de Pan Lactal Negro' },
   ];
 
   const A_items = [
-
-    { name: 'Vasito de yogurt o jugo chiquito', price: '$1000' },
-    { name: 'Vasito de yogurt con granola chiquito', price: '$1100' },
-    { name: 'Compotera de yogurt con granola', price: '$2000' },
-    { name: 'Proporcionado Queso / Mermelada', price: '$1000' }
-
+    { name: 'Vasito de Yogurt o Jugo Chiquito', price: '$1000' },
+    { name: 'Vasito de Yogurt con Granola Chiquito', price: '$1100' },
+    { name: 'Compotera de Yogurt con Granola', price: '$2000' },
+    { name: 'Porción de Queso / Mermelada', price: '$1000' }
   ];
-  
-  const navigate = useNavigate('/');
+
+  const navigate = useNavigate();
 
   return (
     <div className={style.DesayunosMeriendas}>
       <Header />
       <div className={style.Boton_retroceso}>
-        <button className={style.Boton} onClick={() => navigate(-1)}>Atras</button>
+        <button className={style.Boton} onClick={() => navigate(-1)}>Atrás</button>
       </div>
       <div className={style.menu}>
         <h2 className={style.titulo}>Desayunos y Meriendas</h2>
@@ -62,9 +57,7 @@ export default function DesayunosMeriendas() {
             />
           ))}
         </ul>
-
       </div>
     </div>
-
-  )
+  );
 }

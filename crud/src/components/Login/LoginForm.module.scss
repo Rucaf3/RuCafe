@@ -1,0 +1,71 @@
+$background-pattern: url('path/to/your/background/image.png');
+
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../../assets/Home.png');
+  background-size: cover;
+  height: 100vh;
+  justify-content: center;
+}
+
+.logo {
+  font-family: 'Your Logo Font', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.loginForm {
+  background: rgba(255, 153, 102, 0.9);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgb(0, 0, 0);
+  
+  h2 {
+    font-family: 'Your Font', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .inputGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+
+    label {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    input {
+      padding: 0.5rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .togglePassword {
+      position: absolute;
+      right: 10px;
+      top: calc(50% - 0.5rem);
+      cursor: pointer;
+    }
+  }
+
+  button {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #555;
+    }
+  }
+}

@@ -1,14 +1,13 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom'
-import './AlmuerzosCenas.scss'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import './AlmuerzosCenas.scss';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 
 const menuItems = [
-
-{ name: 'Para Picar', route: '/para-picar' },
+  { name: 'Para Picar', route: '/para-picar' },
   { name: 'Pizzas', route: '/pizzas' },
-  { name: 'Hamburguesas y Sandwiches', route: '/hamburguesas-y-sandwiches' },
+  { name: 'Hamburguesas y Sándwiches', route: '/hamburguesas-y-sandwiches' },
   { name: 'Al Plato', route: '/al-plato' }
 ];
 
@@ -21,12 +20,12 @@ export default function AlmuerzosCenas() {
   };
 
   return (
-    <div className=''>
+    <div className='almuerzos-cenas'>
       <div className='almuerzos-cenas-header'>
         <Header />
       </div>
       <div className='Boton_retroceso'>
-        <button className='Boton' onClick={() => navigate(-1)}>Atras</button>
+        <button className='Boton' onClick={() => navigate(-1)}>Atrás</button>
       </div>
       <div className='Button-menu'>
         {menuItems.map((item, index) => (
@@ -48,6 +47,5 @@ export default function AlmuerzosCenas() {
         <Footer />
       </div>
     </div>
-
-  )
+  );
 }

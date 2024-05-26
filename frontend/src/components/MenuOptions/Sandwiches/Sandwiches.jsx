@@ -5,32 +5,27 @@ import Header from '../AlmuerzosCenas/Header/Header';
 import { useNavigate } from 'react-router-dom';
 
 export default function Sandwiches() {
-
   const S_items = [
-
     { name: "1/2 Jamón y Queso", descripcion: "", price: "$1900" },
     { name: "Triple Jamón y Queso", descripcion: "", price: "$3000" },
     { name: "Triple Jamón, Queso y Tomate", descripcion: "", price: "$3200" },
     { name: "Triple de Ternera y Queso", descripcion: "", price: "$3600" },
-    { name: "Triple de Ternera, queso y tomate", descripcion: "", price: "$3600" },
+    { name: "Triple de Ternera, Queso y Tomate", descripcion: "", price: "$3600" },
     { name: "Triple de Ternera + Lechuga y Tomate", descripcion: "", price: "$3800" },
     { name: "Triple de Pollo, Lechuga y Tomate", descripcion: "", price: "$4600" },
     { name: "Triple de Pollo, Queso y Tomate", descripcion: "", price: "$3800" }
-
   ];
 
-  
-  const navigate = useNavigate('/');
-
+  const navigate = useNavigate();
 
   return (
     <div className={style.Sandwiches}>
       <Header />
       <div className={style.Boton_retroceso}>
-        <button className={style.Boton} onClick={() => navigate(-1)}>Atras</button>
+        <button className={style.Boton} onClick={() => navigate(-1)}>Atrás</button>
       </div>
       <div className={style.menu}>
-        <h2 className={style.titulo}>Sandwiches</h2>
+        <h2 className={style.titulo}>Sándwiches</h2>
         <ul className={style.items}>
           {S_items.map((item, index) => (
             <SandwichesItems

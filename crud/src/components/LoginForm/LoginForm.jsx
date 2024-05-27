@@ -1,18 +1,20 @@
-// src/LoginForm.js
 import React, { useState } from 'react';
 import styles from './LoginForm.module.scss';
 import { MdiEye } from '../../assets/components/MdiEye';
 import { MdiEyeOff } from '../../assets/components/MdiEyeOff';
+import { useNavigate } from 'react-router-dom';
 
 const LoginForm = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate();
 
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log('Email:', email);
     console.log('Password:', password);
+    navigate('/menu'); // Navegar a la ruta del menú después del login
   };
 
   const togglePasswordVisibility = () => {
@@ -26,7 +28,7 @@ const LoginForm = () => {
         <div className={styles.formGroup}>
           <label htmlFor="email">Email</label>
           <input
-            type="email"
+            type="text"
             id="email"
             placeholder="Ingrese su Email..."
             value={email}

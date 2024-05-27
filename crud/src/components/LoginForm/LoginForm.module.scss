@@ -1,0 +1,99 @@
+// src/LoginForm.module.scss
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5b895;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .loginForm {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .formGroup {
+    margin-bottom: 20px;
+  }
+  
+  .formGroup label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .inputField{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  
+  .inputPassword {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .inputField::placeholder,
+  .inputPassword::placeholder {
+    color: #ccc;
+  }
+  
+  .passwordContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .toggleButton {
+    cursor: pointer;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #fff;
+  }
+  
+  .toggleButton img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .loginButton {
+    width: 100%;
+    padding: 15px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .loginButton:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .logoContainer {
+    box-shadow: 4px 4px 10px #000000;
+    border-radius: 50%;
+  }
+  
+  .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }

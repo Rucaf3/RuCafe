@@ -8,12 +8,15 @@ import { SolarPenLinear } from '../../../assets/components/SolarPenLinear';
 import { MdiEye } from '../../../assets/components/MdiEye';
 import { IconoirTrash } from '../../../assets/components/IconoirTrash';
 import { useNavigate } from 'react-router-dom';
+import { MdiEyeOff } from '../../../assets/components/MdiEyeOff';
 
 function Lista({ onSearch }) {
   const navigate = useNavigate();
   const [query, setQuery] = useState('');
   const [expandedIndex, setExpandedIndex] = useState(null);
   const [deleteIndex, setDeleteIndex] = useState(null);
+  const [showVisibility, setShowVisibility] = useState(false);
+
 
   const handleSearch = (e) => {
     e.preventDefault();
@@ -26,6 +29,10 @@ function Lista({ onSearch }) {
 
   const confirmDelete = (index) => {
     setDeleteIndex(index);
+  };
+
+  const toggleVisibility = () => {
+    setShowVisibility(!showVisibility);
   };
 
   const handleDelete = (index) => {
@@ -67,8 +74,13 @@ function Lista({ onSearch }) {
                 <button onClick={() => toggleExpand(index)}>
                   <SolarPenLinear />
                 </button>
-                <button>
-                  <MdiEye />
+                {/* Revisar */}
+                <button
+                  type="button"
+                  className={styles.toggleButton}
+                  onClick={toggleVisibility}
+                >
+                  {showVisibility ? <MdiEyeOff /> : <MdiEye />}
                 </button>
                 <button onClick={() => confirmDelete(index)}>
                   <IconoirTrash />

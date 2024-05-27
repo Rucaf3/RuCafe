@@ -161,6 +161,19 @@ body {
   padding: 10px;
 }
 
+.toggleButton {
+  cursor: pointer;
+  padding: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #fff;
+}
+
+.toggleButton img {
+  width: 24px;
+  height: 24px;
+}
+
 .save-button {
   align-self: flex-end;
   background-color: #daa97f;

@@ -74,7 +74,7 @@ function Lista({ onSearch }) {
                 <button onClick={() => toggleExpand(index)}>
                   <SolarPenLinear />
                 </button>
-                {/* Revisar */}
+                {/* Revisar Esto */}
                 <button
                   type="button"
                   className={styles.toggleButton}

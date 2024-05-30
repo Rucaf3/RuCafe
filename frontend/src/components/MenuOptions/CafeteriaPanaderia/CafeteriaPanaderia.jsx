@@ -6,30 +6,31 @@ import Header from '../AlmuerzosCenas/Header/Header';
 import { useNavigate } from 'react-router-dom';
 
 export default function CafeteriaPanaderia() {
-
+  
   const Ca_items = [
-    { name: "Café/Cortado", descripcion: "Café o Café con leche Chico", price: "$1300" },
-    { name: "Café en jarrita", descripcion: "Café o Café con leche en Jarrita", price: "$1400" },
-    { name: "Café con leche", descripcion: "Grande", price: "$1400" },
-    { name: "Cortado doble", descripcion: "Doble ración de café", price: "$1600" },
-    { name: "Macchiato", descripcion: "Café con espuma", price: "$1800" },
-    { name: "Lágrima", descripcion: "Poco café y mucha leche", price: "$1600" },
-    { name: "Cappuccino", descripcion: "Café con leche y mucha espuma con canela o chocolate", price: "$2100" },
-    { name: "Té con leche", descripcion: "", price: "$1600" },
-    { name: "Té", descripcion: "", price: "$1300" },
-    { name: "Mate cocido", descripcion: "", price: "$1300" },
-    { name: "Submarino", descripcion: "", price: "$2100" }
-  ];
+    { name: "Café/Cortado", descripcion: "Café o Café con leche Chico", price: "$1430" },
+    { name: "Café en jarrita", descripcion: "Café o Café con leche en Jarrita", price: "$1540" },
+    { name: "Café con leche", descripcion: "Grande", price: "$1540" },
+    { name: "Cortado doble", descripcion: "Doble ración de café", price: "$1760" },
+    { name: "Macchiato", descripcion: "Café con espuma", price: "$1980" },
+    { name: "Lágrima", descripcion: "Poco café y mucha leche", price: "$1760" },
+    { name: "Cappuccino", descripcion: "Café con leche y mucha espuma con canela o chocolate", price: "$2310" },
+    { name: "Té con leche", descripcion: "", price: "$1760" },
+    { name: "Té", descripcion: "", price: "$1430" },
+    { name: "Mate cocido", descripcion: "", price: "$1430" },
+    { name: "Submarino", descripcion: "", price: "$2310" }
+];
 
-  const P_items = [
-    { name: "Tortilla", descripcion: "Negra, negra con semilla, de campo, pan francés", price: "$600" },
-    { name: "Tostadas", descripcion: "", price: "$600" },
-    { name: "Medialunas", descripcion: "", price: "$2100" },
-    { name: "Medialunas con jamón y queso", descripcion: "", price: "$1400" },
+const P_items = [
+    { name: "Tortilla", descripcion: "Negra, negra con semilla, de campo, pan francés", price: "$660" },
+    { name: "Tostadas", descripcion: "", price: "$660" },
+    { name: "Medialunas", descripcion: "", price: "$2310" },
+    { name: "Medialunas con jamón y queso", descripcion: "", price: "$1540" },
     { name: "Croissant", descripcion: "", price: "S/P" },
     { name: "Croissant con jamón y queso", descripcion: "", price: "S/P" },
-    { name: "Alfajores", descripcion: "(Consultar variedad)", price: "$2100" }
-  ];
+    { name: "Alfajores", descripcion: "(Consultar variedad)", price: "$2310" }
+];
+
 
   const navigate = useNavigate();
 

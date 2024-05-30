@@ -7,23 +7,24 @@ import { useNavigate } from 'react-router-dom';
 export default function Bebidas() {
 
   const SinAlcohol_items = [
-    { name: 'Gaseosa línea Coca Cola 350ml', descripcion: "", price: '$1400' },
-    { name: 'Gaseosa línea Coca Cola 1 litro', descripcion: "", price: '$2500' },
-    { name: 'Agua Saborizada 500ml', descripcion: "", price: '$1500' },
-    { name: 'Agua mineral con gas / sin gas', descripcion: "", price: '$1300' },
-    { name: 'Jugo de naranja jarrita', descripcion: "", price: '$2000' },
-    { name: 'Jugo de naranja 1 litro', descripcion: "", price: '$3100' },
-    { name: 'Limonada jarrita', descripcion: "", price: '$1900' },
-    { name: 'Limonada 1 litro', descripcion: "", price: '$3000' }
-  ];
+    { name: 'Gaseosa línea Coca Cola 350ml', descripcion: "", price: '$1540' },
+    { name: 'Gaseosa línea Coca Cola 1 litro', descripcion: "", price: '$2750' },
+    { name: 'Agua Saborizada 500ml', descripcion: "", price: '$1650' },
+    { name: 'Agua mineral con gas / sin gas', descripcion: "", price: '$1430' },
+    { name: 'Jugo de naranja jarrita', descripcion: "", price: '$2200' },
+    { name: 'Jugo de naranja 1 litro', descripcion: "", price: '$3410' },
+    { name: 'Limonada jarrita', descripcion: "", price: '$2090' },
+    { name: 'Limonada 1 litro', descripcion: "", price: '$3300' }
+];
 
-  const ConAlcohol_items = [
-    { name: 'Cerveza en latas', descripcion: "(Consultar variedad)", price: '$2000' },
-    { name: 'Quilmes 1 litro', descripcion: "", price: '$3100' },
-    { name: 'Salta Negra 1 litro', descripcion: "", price: '$3300' },
-    { name: 'Heineken 1 litro', descripcion: "", price: '$4500' },
-    { name: 'Stella Artois 1 litro', descripcion: "", price: '$4500' }
-  ];
+const ConAlcohol_items = [
+    { name: 'Cerveza en latas', descripcion: "(Consultar variedad)", price: '$2200' },
+    { name: 'Quilmes 1 litro', descripcion: "", price: '$3410' },
+    { name: 'Salta Negra 1 litro', descripcion: "", price: '$3630' },
+    { name: 'Heineken 1 litro', descripcion: "", price: '$4950' },
+    { name: 'Stella Artois 1 litro', descripcion: "", price: '$4950' }
+];
+
 
   const navigate = useNavigate();
 

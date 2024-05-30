@@ -1,12 +1,22 @@
 // src/LoginForm.module.scss
+.fullContainer{
+  width: 100;
+  margin: 20px 20px;
+  background-image: url(../../assets/Home.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .loginContainer {
     display: flex;
+    margin: 50% 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #f5b895;
     padding: 20px;
     border-radius: 10px;
+    background-color: rgba(160, 93, 31, 0.64);
   }
   
   .loginForm {
@@ -16,6 +26,18 @@
     border-radius: 10px;
   }
   
+  .logoContainer {
+    box-shadow: 4px 4px 10px #000000;
+    border-radius: 50%;
+    background-color: rgba(185, 103, 26, 0.603);
+  }
+  
+  .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   h2 {
     text-align: center;
     margin-bottom: 20px;
@@ -53,7 +75,7 @@
     color: #ccc;
   }
   
-  .passwordContainer {
+  .inputContainer {
     display: flex;
     align-items: center;
   }
@@ -74,8 +96,8 @@
   .loginButton {
     width: 100%;
     padding: 15px;
-    background-color: #fff;
-    color: #333;
+    background-color: rgba(160, 93, 31, 0.64);
+    color: #000000;
     border: none;
     border-radius: 10px;
     font-weight: bold;
@@ -87,13 +109,3 @@
     background-color: #f0f0f0;
   }
   
-  .logoContainer {
-    box-shadow: 4px 4px 10px #000000;
-    border-radius: 50%;
-  }
-  
-  .logo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }

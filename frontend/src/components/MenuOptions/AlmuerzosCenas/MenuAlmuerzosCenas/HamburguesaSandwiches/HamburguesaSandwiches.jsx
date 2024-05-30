@@ -9,22 +9,23 @@ import { useNavigate } from 'react-router-dom';
 export default function HamburguesaSandwiches() {
 
   const hamburguesaItems = [
-    { name: "Común / Clásica", descripcion: "Con lechuga, tomate y aderezos", price: "$4000" },
-    { name: "Super", descripcion: "Con Jamón, queso, lechuga, tomate y aderezos", price: "$4900" },
-    { name: "Ruca", descripcion: "Con Huevo, jamón, queso, lechuga, tomate y aderezos + Papas Fritas", price: "$5100" }
-  ];
+    { name: "Común / Clásica", descripcion: "Con lechuga, tomate y aderezos", price: "$4400" },
+    { name: "Super", descripcion: "Con Jamón, queso, lechuga, tomate y aderezos", price: "$5390" },
+    { name: "Ruca", descripcion: "Con Huevo, jamón, queso, lechuga, tomate y aderezos + Papas Fritas", price: "$5610" }
+];
 
-  const lomitoItems = [
-    { name: "Común / Clásico", descripcion: "Con lechuga, tomate y aderezos", price: "$5400" },
-    { name: "Super", descripcion: "Con Jamón, queso, lechuga, tomate y aderezos", price: "$5900" },
-    { name: "Ruca", descripcion: "Con Huevo, jamón, queso, lechuga, tomate y aderezos + Papas Fritas", price: "$6800" }
-  ];
+const lomitoItems = [
+    { name: "Común / Clásico", descripcion: "Con lechuga, tomate y aderezos", price: "$5940" },
+    { name: "Super", descripcion: "Con Jamón, queso, lechuga, tomate y aderezos", price: "$6490" },
+    { name: "Ruca", descripcion: "Con Huevo, jamón, queso, lechuga, tomate y aderezos + Papas Fritas", price: "$7480" }
+];
 
-  const milanesaItems = [
-    { name: "Común / Clásica", descripcion: "Con lechuga, tomate y aderezos", price: "$4000" },
-    { name: "Super", descripcion: "Con Jamón, queso, lechuga, tomate y aderezos", price: "$4500" },
-    { name: "Ruca", descripcion: "Con Huevo, jamón, queso, lechuga, tomate y aderezos + Papas Fritas", price: "$5000" }
-  ];
+const milanesaItems = [
+    { name: "Común / Clásica", descripcion: "Con lechuga, tomate y aderezos", price: "$4400" },
+    { name: "Super", descripcion: "Con Jamón, queso, lechuga, tomate y aderezos", price: "$4950" },
+    { name: "Ruca", descripcion: "Con Huevo, jamón, queso, lechuga, tomate y aderezos + Papas Fritas", price: "$5500" }
+];
+
 
   const navigate = useNavigate();
 

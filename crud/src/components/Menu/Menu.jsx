@@ -1,18 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from './menu.module.scss';
-import { IcBaselineSearch } from '../../assets/components/IcBaselineSearch';
-import { FaRegularUser } from '../../assets/components/FaRegularUser';
-import Logo from '../../assets/Logo.png';
+import HeaderMenu from './HeaderMenu/HeaderMenu';
 
-function Menu({ onSearch }) {
-  const [query, setQuery] = useState('');
-  const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
-
-  const handleSearch = (e) => {
-    e.preventDefault();
-    onSearch(query);
-  };
+function Menu() {
 
   const navigate = useNavigate();
 
@@ -32,45 +23,10 @@ function Menu({ onSearch }) {
     { name: 'Milanesas al Plato', route: '/lista' }
   ];
 
-  const toggleUserMenu = () => {
-    setIsUserMenuOpen(!isUserMenuOpen);
-  };
 
   return (
     <div className={styles['menu-container']}>
-      <header className={styles['menu-header']}>
-        <img src={Logo} alt="Logo" className={styles['menu-logo']} />
-        <div className={styles['search-bar']}>
-          <form onSubmit={handleSearch}>
-            <input
-              type="text"
-              placeholder="BÚSQUEDA..."
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-            />
-            <button type="submit">
-              <IcBaselineSearch />
-            </button>
-          </form>
-        </div>
-        <div className={styles['user-icon']} onClick={toggleUserMenu}>
-          <FaRegularUser />
-          {isUserMenuOpen && (
-            <div className={styles['user-menu']}>
-              <div className={styles['user-menu-item']}>
-                <FaRegularUser className={styles['user-menu-icon']} />
-                <p>Evelin Seifer<br />Made</p>
-              </div>
-              <button
-                className={styles['user-menu-button']}
-                onClick={() => navegacion('/logout')}
-              >
-                cerrar sesión
-              </button>
-            </div>
-          )}
-        </div>
-      </header>
+      <HeaderMenu />
       <div className={styles['menu-grid']}>
         <div className={styles.Button_menu}>
           {menuItems.map((item, index) => (

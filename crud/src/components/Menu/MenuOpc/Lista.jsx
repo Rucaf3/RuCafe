@@ -9,6 +9,7 @@ import { MdiEye } from '../../../assets/components/MdiEye';
 import { IconoirTrash } from '../../../assets/components/IconoirTrash';
 import { useNavigate } from 'react-router-dom';
 import { MdiEyeOff } from '../../../assets/components/MdiEyeOff';
+import HeaderMenu from '../HeaderMenu/HeaderMenu';
 
 function Lista({ onSearch }) {
   const navigate = useNavigate();
@@ -43,25 +44,7 @@ function Lista({ onSearch }) {
 
   return (
     <div className={styles['lista-container']}>
-      <header className={styles['lista-header']}>
-        <img src={Logo} alt="Logo" className={styles['lista-logo']} />
-        <div className={styles['search-bar']}>
-          <form onSubmit={handleSearch}>
-            <input
-              type="text"
-              placeholder="BÚSQUEDA..."
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-            />
-            <button type="submit">
-              <IcBaselineSearch />
-            </button>
-          </form>
-        </div>
-        <div className={styles['user-icon']}>
-          <FaRegularUser />
-        </div>
-      </header>
+      <HeaderMenu />
       <div className={styles['Boton_retroceso']}>
         <button className={styles['Boton']} onClick={() => navigate(-1)}>ATRAS</button>
       </div>

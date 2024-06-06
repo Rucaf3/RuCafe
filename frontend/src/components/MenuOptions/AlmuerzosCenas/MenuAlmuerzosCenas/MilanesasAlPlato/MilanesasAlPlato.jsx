@@ -7,14 +7,14 @@ import { useNavigate } from 'react-router-dom';
 export default function MilanesasAlPlato() {
   
   const Milanesas_Items = [
-    { name: "Milanesa Común con papas o ensalada", descripcion: "Lechuga y tomate", price: "$7700" },
-    { name: "Milanesa Napolitana con papas o ensalada", descripcion: "Lechuga y tomate", price: "$8250" },
-    { name: "Milanesa a Caballo con papas o ensalada", descripcion: "Lechuga y tomate", price: "$8250" },
-    { name: "Milanesa a la Suiza con papas o ensalada", descripcion: "Lechuga y tomate", price: "$8690" },
-    { name: "Milanesa de pollo Común con papas o ensalada", descripcion: "Lechuga y tomate", price: "$7370" },
-    { name: "Milanesa de pollo Napolitana con papas o ensalada", descripcion: "Lechuga y tomate", price: "$7920" },
-    { name: "Milanesa de pollo a Caballo con papas o ensalada", descripcion: "Lechuga y tomate", price: "$7920" },
-    { name: "Milanesa de pollo a la Suiza con papas o ensalada", descripcion: "Lechuga y tomate", price: "$8360" }
+    { name: "Milanesa Común con papas o ensalada", descripcion: "", price: "$7300" },
+    { name: "Milanesa Napolitana con papas o ensalada", descripcion: "", price: "$7800" },
+    { name: "Milanesa a Caballo con papas o ensalada", descripcion: "", price: "$7800" },
+    { name: "Milanesa a la Suiza con papas o ensalada", descripcion: "", price: "$8200" },
+    { name: "Milanesa de pollo Común con papas o ensalada", descripcion: "", price: "$7000" },
+    { name: "Milanesa de pollo Napolitana con papas o ensalada", descripcion: "", price: "$7500" },
+    { name: "Milanesa de pollo a Caballo con papas o ensalada", descripcion: "", price: "$7500" },
+    { name: "Milanesa de pollo a la Suiza con papas o ensalada", descripcion: "", price: "$7900" }
 ];
 
 

@@ -13,9 +13,14 @@ $md: 744px;
 $lg: 1440px;
 
 // Estilos globales
-#root {
-  height: 100;
-  font-size: 16px;
+:root {
+  font-family: "Merienda", cursive;
+  color: $text-color;
+  background-color: $background-primary;
+}
+
+.notranslate {
+  font-family: "Merienda", cursive;
 }
 
 html, body {

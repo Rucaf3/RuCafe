@@ -8,27 +8,27 @@ import { useNavigate } from 'react-router-dom';
 export default function CafeteriaPanaderia() {
   
   const Ca_items = [
-    { name: "Café/Cortado", descripcion: "Café o Café con leche Chico", price: "$1430" },
-    { name: "Café en jarrita", descripcion: "Café o Café con leche en Jarrita", price: "$1540" },
-    { name: "Café con leche", descripcion: "Grande", price: "$1540" },
-    { name: "Cortado doble", descripcion: "Doble ración de café", price: "$1760" },
-    { name: "Macchiato", descripcion: "Café con espuma", price: "$1980" },
-    { name: "Lágrima", descripcion: "Poco café y mucha leche", price: "$1760" },
-    { name: "Cappuccino", descripcion: "Café con leche y mucha espuma con canela o chocolate", price: "$2310" },
-    { name: "Té con leche", descripcion: "", price: "$1760" },
-    { name: "Té", descripcion: "", price: "$1430" },
-    { name: "Mate cocido", descripcion: "", price: "$1430" },
-    { name: "Submarino", descripcion: "", price: "$2310" }
+    { name: "Pocillo / Cortado", descripcion: "Café o Café con leche Chico", price: "$1400" },
+    { name: "Café en jarrita", descripcion: "Café o Café con leche en Jarrita", price: "$1500" },
+    { name: "Café con leche", descripcion: "Grande", price: "$1800" },
+    { name: "Cortado doble", descripcion: "Doble ración de café", price: "$1900" },
+    { name: "Macchiato", descripcion: "Café con espuma", price: "$2000" },
+    { name: "Lágrima", descripcion: "Poco café y mucha leche", price: "$1800" },
+    { name: "Cappuccino", descripcion: "Café con leche y mucha espuma con canela o chocolate", price: "$2200" },
+    { name: "Té con leche", descripcion: "", price: "$1800" },
+    { name: "Té", descripcion: "", price: "$1400" },
+    { name: "Mate cocido", descripcion: "", price: "$1400" },
+    { name: "Submarino", descripcion: "", price: "$2300" }
 ];
 
 const P_items = [
-    { name: "Tortilla", descripcion: "Negra, negra con semilla, de campo, pan francés", price: "$660" },
-    { name: "Tostadas", descripcion: "", price: "$660" },
-    { name: "Medialunas", descripcion: "", price: "$2310" },
-    { name: "Medialunas con jamón y queso", descripcion: "", price: "$1540" },
+    { name: "Tortilla", descripcion: "", price: "$600" },
+    { name: "Tostadas", descripcion: "Negra, negra con semilla, de campo, pan francés", price: "$600" },
+    { name: "Medialunas", descripcion: "", price: "$600" },
+    { name: "Medialunas con jamón y queso", descripcion: "", price: "$1400" },
     { name: "Croissant", descripcion: "", price: "S/P" },
     { name: "Croissant con jamón y queso", descripcion: "", price: "S/P" },
-    { name: "Alfajores", descripcion: "(Consultar variedad)", price: "$2310" }
+    { name: "Alfajores", descripcion: "(Consultar variedad)", price: "S/P" }
 ];
 
 

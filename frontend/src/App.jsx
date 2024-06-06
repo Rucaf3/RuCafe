@@ -18,7 +18,6 @@ export default function App() {
     <Router>
       <div className="container">
         <Routes>
-          {/* Enrutamientos Home */}
           <Route exact path="/" element={<Home />} />
           <Route exact path="/sandwiches" element={<Sandwiches />} />
           <Route exact path="/licuados" element={<Licuados />} />
@@ -26,7 +25,6 @@ export default function App() {
           <Route exact path="/bebidas" element={<Bebidas />} />
           <Route exact path="/almuerzos-cenas" element={<AlmuerzosCenas />} />
           <Route exact path="/cafeteria-panaderia" element={<CafeteriaPanaderia />} />
-          {/* Enrutamientos AlmuerzosCenas */}
           <Route exact path="/para-picar" element={<ParaPicar />} />
           <Route exact path="/pizzas" element={<Pizzas />} />
           <Route exact path="/al-plato" element={<MilanesasAlPlato />} />

@@ -6,10 +6,10 @@ import image4 from '../../../../assets/Promo3.png';
 import image1 from '../../../../assets/Promo4.png';
 
 const images = [
-  { src: image1, alt: 'Promo 1', description: '1 Licuados + 1/2 Jamón y Queso', precio: '$4200' },
-  { src: image2, alt: 'Promo 2', description: '2 Licuados (mismo sabor) + 1 Jamón y Queso', precio: '$7600' },
-  { src: image3, alt: 'Promo 3', description: '2 Infusiones + 1 de Jamón y Queso', precio: '$6800' },
-  { src: image4, alt: 'Promo 4', description: '1 Infusion + 1/2 de Jamón y Queso', precio: '$3800' }
+  { src: image1, alt: 'Promo 1', description: '1 Licuados + 1/2 Jamón y Queso', precio: '$4400' },
+  { src: image2, alt: 'Promo 2', description: '2 Licuados (mismo sabor) + 1 Jamón y Queso', precio: '$8300' },
+  { src: image3, alt: 'Promo 3', description: '2 Infusiones + 1 de Jamón y Queso', precio: '$7500' },
+  { src: image4, alt: 'Promo 4', description: '1 Infusion + 1/2 de Jamón y Queso', precio: '$4000' }
 ];
 
 

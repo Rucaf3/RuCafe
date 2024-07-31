@@ -7,12 +7,12 @@ import { useNavigate } from 'react-router-dom';
 export default function Pizzas() {
 
   const P_Items = [
-    { name: "Común / Muzzarella", descripcion: "Queso muzzarella + Aceitunas", price1: "$6200", price2: "$3600" },
-    { name: "Especial", descripcion: "Queso muzzarella, Jamón cocido + Aceitunas y Morrones", price1: "$6500", price2: "$3800" },
-    { name: "Fugazzeta", descripcion: "Queso muzzarella + Cebolla + Aceitunas", price1: "$6500", price2: "$3900" },
-    { name: "Napolitana", descripcion: "Queso muzzarella + Tomate + Aceitunas", price1: "$5700", price2: "$3900" },
-    { name: "Ternera", descripcion: "Queso muzzarella + Ternera + Aceitunas y Morrones", price1: "$7700", price2: "$4400" },
-    { name: "Calabresa", descripcion: "Queso muzzarella + Pepperoni + Aceitunas", price1: "$7700", price2: "$4400" },
+    { name: "Común / Muzzarella", descripcion: "Queso muzzarella + Aceitunas", price1: "$8700", price2: "$5000" },
+    { name: "Especial", descripcion: "Queso muzzarella, Jamón cocido + Aceitunas y Morrones", price1: "$9000", price2: "$5100" },
+    { name: "Fugazzeta", descripcion: "Queso muzzarella + Cebolla + Aceitunas", price1: "$9000", price2: "$5100" },
+    { name: "Napolitana", descripcion: "Queso muzzarella + Tomate + Aceitunas", price1: "$8900", price2: "$5100" },
+    { name: "Ternera", descripcion: "Queso muzzarella + Ternera + Aceitunas y Morrones", price1: "$10200", price2: "$5700" },
+    { name: "Calabresa", descripcion: "Queso muzzarella + Pepperoni + Aceitunas", price1: "$10200", price2: "$5700" },
     { name: "Rúcula", descripcion: "Queso muzzarella + Rúcula + Tomate", price1: "S/P", price2: "S/P" }
   ];
 

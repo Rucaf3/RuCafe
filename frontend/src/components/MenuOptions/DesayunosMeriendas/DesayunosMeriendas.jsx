@@ -23,7 +23,7 @@ export default function DesayunosMeriendas() {
 const A_items = [
     { name: 'Vasito de Yogurt o Jugo Chiquito', price: '$1700' },
     { name: 'Vasito de Yogurt con Granola Chiquito', price: '$1700' },
-    { name: 'Compotera de Yogurt con Granola', price: '$300' },
+    { name: 'Compotera de Yogurt con Granola', price: '$3000' },
     { name: 'Porción de Queso / Mermelada / Dulce de Leche / Manteca', price: '$1800' },
     { name: 'Compotera de Ensalada de Frutas', price: '$3500' },
 ];

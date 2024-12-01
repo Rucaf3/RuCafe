@@ -8,24 +8,26 @@ import { useNavigate } from 'react-router-dom';
 export default function DesayunosMeriendas() {
 
   const DM_items = [
-    { name: 'CLÁSICO', price: '$2300', description: 'Infusión + 2 Tortillas o Medialunas' },
-    { name: 'LIGHT', price: '$3700', description: 'Infusión + Tostadas de Pan Lactal + Mermelada + Queso Crema + Jugo de Naranja + Yogurt con Granola' },
-    { name: 'EJECUTIVO', price: '$3500', description: 'Infusión + Tostadas en Pan Lactal + Queso Blanco + Mermelada + Jugo de Naranja' },
-    { name: 'PROTEICO', price: '$4700', description: 'Infusión + Tostadas en Pan Lactal Negro + Huevo Revuelto + Jamón Cocido + Queso Crema + Jugo de Naranja' },
-    { name: 'MAFALDA', price: '$4900', description: 'Infusión + 2 Medialunas de Jamón y Queso + Jugo de Naranja' },
-    { name: 'CONTINENTAL', price: '$4300', description: 'Infusión + Pan de Campo + Manteca, Dulce de Leche o Mermelada + Jugo de Naranja + Ensalada de Fruta' },
-    { name: 'SALUDABLE', price: '$3200', description: 'Infusión + 2 Fetas de Queso + 2 Fetas de Jamón + Jugo de Naranja' },
-    { name: 'SUPER RUCA', price: '$7500', description: 'Infusión + 1 Omelette + Jugo de Naranja' },
-    { name: 'SIN TACC', price: '$2300', description: 'Infusión + Galletas de Arroz + Mermelada + Queso Untable' },
-    { name: 'DELICIA DE JAMÓN Y QUESO', price: '$4000', description: 'Infusión + 2 Fetas de Queso + 2 Fetas de Jamón + Tostadas de Pan Lactal Negro' }
+    { name: 'CLÁSICO', price: '$2700', description: 'Infusión + 2 Tortillas o Medialunas' },
+    { name: 'LIGHT', price: '$4300', description: 'Infusión + Tostadas de Pan Lactal + Mermelada + Queso Crema + Jugo de Naranja + Yogurt con Granola' },
+    { name: 'EJECUTIVO', price: '$4000', description: 'Infusión + Tostadas en Pan Lactal + Queso Blanco + Mermelada + Jugo de Naranja' },
+    { name: 'PROTEICO', price: '$5400', description: 'Infusión + Tostadas en Pan Lactal Negro + Huevo Revuelto + Jamón Cocido + Queso Crema + Jugo de Naranja' },
+    { name: 'MAFALDA', price: '$5500', description: 'Infusión + 2 Medialunas de Jamón y Queso + Jugo de Naranja' },
+    { name: 'CONTINENTAL', price: '$4900', description: 'Infusión + Pan de Campo + Manteca, Dulce de Leche o Mermelada + Jugo de Naranja + Ensalada de Fruta' },
+    { name: 'SALUDABLE', price: '$3800', description: 'Infusión + 2 Fetas de Queso + 2 Fetas de Jamón + Jugo de Naranja' },
+    { name: 'SUPER RUCA', price: '$8100', description: 'Infusión + 1 Omelette + Jugo de Naranja' },
+    { name: 'SIN TACC', price: '$3400', description: 'Infusión + Galletas de Arroz + Mermelada + Queso Untable' },
+    { name: 'DELICIA DE JAMÓN Y QUESO', price: '$4600', description: 'Infusión + 2 Fetas de Queso + 2 Fetas de Jamón + Tostadas de Pan Lactal Negro' },
+    { name: 'AVOCADO', price: '$6800', description: ' Infusion + 2 Tostadas con Palta y Huevo + Jugo de Naranja' },
+    { name: 'BRUNCH PARA DOS', price: '$15500', description: '2 Infusiones + 2 Medialunas con Jamon y Queso + 2 Tostadas Negras con Palta y Huevo + 2 Jugos de Naranja + Copon de Granola con Miel y Frutas de Estacion ' }
 ];
 
 const A_items = [
-    { name: 'Vasito de Yogurt o Jugo Chiquito', price: '$1700' },
-    { name: 'Vasito de Yogurt con Granola Chiquito', price: '$1700' },
-    { name: 'Compotera de Yogurt con Granola', price: '$3000' },
-    { name: 'Porción de Queso / Mermelada / Dulce de Leche / Manteca', price: '$1800' },
-    { name: 'Compotera de Ensalada de Frutas', price: '$3500' },
+    { name: 'Vasito de Yogurt o Jugo Chiquito', price: '$2200' },
+    { name: 'Vasito de Yogurt con Granola Chiquito', price: '$2200' },
+    { name: 'Compotera de Yogurt con Granola', price: '$3500' },
+    { name: 'Porción de Queso / Mermelada / Dulce de Leche / Manteca', price: '$2200' },
+    { name: 'Compotera de Ensalada de Frutas', price: '$4000' },
 ];
 
   const navigate = useNavigate();

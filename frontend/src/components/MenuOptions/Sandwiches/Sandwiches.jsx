@@ -7,14 +7,14 @@ import { useNavigate } from 'react-router-dom';
 export default function Sandwiches() {
   
   const S_items = [
-    { name: "1/2 Jamón y Queso", descripcion: "", price: "$2200" },
-    { name: "Triple Jamón y Queso", descripcion: "", price: "$3700" },
-    { name: "Triple Jamón, Queso y Tomate", descripcion: "", price: "$4000" },
-    { name: "Triple de Ternera y Queso", descripcion: "", price: "$4500" },
-    { name: "Triple de Ternera, Queso y Tomate", descripcion: "", price: "$4700" },
-    { name: "Triple de Ternera + Lechuga y Tomate", descripcion: "", price: "$4900" },
-    { name: "Triple de Pollo, Lechuga y Tomate", descripcion: "", price: "$4700" },
-    { name: "Triple de Pollo, Queso y Tomate", descripcion: "", price: "$4900" }
+    { name: "1/2 Jamón y Queso", descripcion: "", price: "$2700" },
+    { name: "Triple Jamón y Queso", descripcion: "", price: "$4400" },
+    { name: "Triple Jamón, Queso y Tomate", descripcion: "", price: "$4600" },
+    { name: "Triple de Ternera y Queso", descripcion: "", price: "$5300" },
+    { name: "Triple de Ternera, Queso y Tomate", descripcion: "", price: "$5500" },
+    { name: "Triple de Ternera + Lechuga y Tomate", descripcion: "", price: "$5700" },
+    { name: "Triple de Pollo, Lechuga y Tomate", descripcion: "", price: "$5500" },
+    { name: "Triple de Pollo, Queso y Tomate", descripcion: "", price: "$5700" }
 ];
 
 

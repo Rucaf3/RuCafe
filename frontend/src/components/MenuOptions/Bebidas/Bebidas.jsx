@@ -7,22 +7,22 @@ import { useNavigate } from 'react-router-dom';
 export default function Bebidas() {
 
   const SinAlcohol_items = [
-    { name: 'Gaseosa línea Coca Cola 350ml', descripcion: "", price: '$2100' },
-    { name: 'Gaseosa línea Coca Cola 1 litro', descripcion: "", price: '$3200' },
-    { name: 'Agua Saborizada 500ml', descripcion: "", price: '$2200' },
-    { name: 'Agua mineral con gas / sin gas', descripcion: "", price: '$2000' },
-    { name: 'Jugo de naranja jarrita', descripcion: "", price: '$2700' },
-    { name: 'Jugo de naranja 1 litro', descripcion: "", price: '$3900' },
-    { name: 'Limonada jarrita', descripcion: "", price: '$2800' },
-    { name: 'Limonada 1 litro', descripcion: "", price: '$3900' }
+    { name: 'Gaseosa línea Coca Cola 350ml', descripcion: "", price: '$2300' },
+    { name: 'Gaseosa línea Coca Cola 1 litro', descripcion: "", price: '$3400' },
+    { name: 'Agua Saborizada 500ml', descripcion: "", price: '$2400' },
+    { name: 'Agua mineral con gas / sin gas', descripcion: "", price: '$2200' },
+    { name: 'Jugo de naranja jarrita', descripcion: "", price: '$2900' },
+    { name: 'Jugo de naranja 1 litro', descripcion: "", price: '$4100' },
+    { name: 'Limonada jarrita', descripcion: "", price: '$3000' },
+    { name: 'Limonada 1 litro', descripcion: "", price: '$4100' }
 ];
 
 const ConAlcohol_items = [
     { name: 'Cerveza en latas', descripcion: "(Consultar variedad)", price: '$2700' },
-    { name: 'Quilmes 1 litro', descripcion: "", price: '$3800' },
-    { name: 'Salta Negra 1 litro', descripcion: "", price: '$4000' },
-    { name: 'Heineken 1 litro', descripcion: "", price: '$5800' },
-    { name: 'Stella Artois 1 litro', descripcion: "", price: '$6800' }
+    { name: 'Quilmes 1 litro', descripcion: "", price: '$4300' },
+    { name: 'Salta Negra 1 litro', descripcion: "", price: '$4300' },
+    { name: 'Heineken 1 litro', descripcion: "", price: '$7000' },
+    { name: 'Stella Artois 1 litro', descripcion: "", price: '$7000'}
 ];
 
 

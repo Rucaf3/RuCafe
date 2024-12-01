@@ -10,8 +10,8 @@ const menuItems = [
   { name: 'Licuados', route: '/licuados' },
   { name: 'Bebidas', route: '/bebidas' },
   { name: 'Almuerzos & Cenas', route: '/almuerzos-cenas' }
-
 ];
+
 
 export default function ButtonMenu() {
 
@@ -20,6 +20,7 @@ export default function ButtonMenu() {
   const navegacion = (route) => {
     navigate(route);
   };
+
 
   return (
     <div className={styles.Button_menu}>

@@ -7,13 +7,13 @@ import { useNavigate } from 'react-router-dom';
 export default function ParaPicar() {
 
   const Picar_Items = [
-    { name: "Empanadas de Carne o Pollo", descripcion: "", price: "$1500" },
-    { name: "Porción de papas fritas", descripcion: "", price: "$4800" },
-    { name: "Porción de papas fritas con queso gratinado", descripcion: "", price: "$5400" },
-    { name: "Porción de papas fritas con queso gratinado + jamón", descripcion: "", price: "$5700" },
+    { name: "Empanadas de Carne o Pollo", descripcion: "", price: "$2000" },
+    { name: "Porción de papas fritas", descripcion: "", price: "$5300" },
+    { name: "Porción de papas fritas con queso gratinado", descripcion: "", price: "$5900" },
+    { name: "Porción de papas fritas con queso gratinado + jamón", descripcion: "", price: "$6200" },
     { name: "Picada Grande", descripcion: "Queso, Jamón cocido, Roquefort, Ternera, Aceitunas, Milanesa, Papas y Salame", price: "S/P" },
-    { name: "Porción de papas fritas con 2 huevos fritos ", descripcion: "", price: "$5300" },
-    { name: "Salchipapas ", descripcion: "Porcion de papas fritas + salchicha", price: "$5900" },
+    { name: "Porción de papas fritas con 2 huevos fritos ", descripcion: "", price: "$5800" },
+    { name: "Salchipapas ", descripcion: "Porcion de papas fritas + salchicha", price: "$6400" },
 
   ];
 

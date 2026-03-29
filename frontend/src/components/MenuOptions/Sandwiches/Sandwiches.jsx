@@ -7,14 +7,16 @@ import { useNavigate } from 'react-router-dom';
 export default function Sandwiches() {
   
   const S_items = [
-    { name: "1/2 Jamón y Queso", descripcion: "", price: "$3000" },
-    { name: "Triple Jamón y Queso", descripcion: "", price: "$4700" },
-    { name: "Triple Jamón, Queso y Tomate", descripcion: "", price: "$4900" },
-    { name: "Triple de Ternera y Queso", descripcion: "", price: "$5600" },
-    { name: "Triple de Ternera, Queso y Tomate", descripcion: "", price: "$5800" },
-    { name: "Triple de Ternera + Lechuga y Tomate", descripcion: "", price: "$6000" },
-    { name: "Triple de Pollo, Lechuga y Tomate", descripcion: "", price: "$5800" },
-    { name: "Triple de Pollo, Queso y Tomate", descripcion: "", price: "$6000" }
+    { name: "1/2 Jamón y Queso", descripcion: "", price: "$5300" },
+    { name: "Triple Jamón y Queso", descripcion: "", price: "$7200" },
+    { name: "Triple Jamón, Queso y Tomate", descripcion: "", price: "$7400" },
+    { name: "Triple de Ternera y Queso", descripcion: "", price: "$9000" },
+    { name: "Triple de Ternera, Queso y Tomate", descripcion: "", price: "$9600" },
+    { name: "Triple de Ternera + Lechuga y Tomate", descripcion: "", price: "$9500" },
+    { name: "Triple de Pollo, Lechuga y Tomate", descripcion: "", price: "$8600" },
+    { name: "Triple de Pollo, Queso y Tomate", descripcion: "", price: "$9200" },
+    { name: "Vegetariano (lechuga, tomate, palta y huevo)", descripcion: "", price: "$7200" }
+
 ];
 
 

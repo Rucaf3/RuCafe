@@ -7,22 +7,24 @@ import { useNavigate } from 'react-router-dom';
 export default function Bebidas() {
 
   const SinAlcohol_items = [
-    { name: 'Gaseosa línea Coca Cola 350ml', descripcion: "", price: '$2300' },
-    { name: 'Gaseosa línea Coca Cola 1 litro', descripcion: "", price: '$3400' },
-    { name: 'Agua Saborizada 500ml', descripcion: "", price: '$2400' },
-    { name: 'Agua mineral con gas / sin gas', descripcion: "", price: '$2200' },
-    { name: 'Jugo de naranja jarrita', descripcion: "", price: '$3200' },
-    { name: 'Jugo de naranja 1 litro', descripcion: "", price: '$4400' },
-    { name: 'Limonada jarrita', descripcion: "", price: '$3300' },
-    { name: 'Limonada 1 litro', descripcion: "", price: '$4400' }
+    { name: 'Gaseosa línea Coca Cola 350ml', descripcion: "", price: '$3600' },
+    { name: 'Gaseosa línea Coca Cola 1 litro', descripcion: "", price: '$4900' },
+    { name: 'Agua Saborizada 500ml', descripcion: "", price: '$3300' },
+    { name: 'Agua mineral con gas / sin gas', descripcion: "", price: '$3100' },
+    { name: 'Jugo de naranja jarrita', descripcion: "", price: '$4500' },
+    { name: 'Jugo de naranja 1 litro', descripcion: "", price: '$5800' },
+    { name: 'Limonada jarrita', descripcion: "", price: '$4800' },
+    { name: 'Limonada 1 litro', descripcion: "", price: '$5800' },
+    { name: 'Limonada Menta y Jengibre jarrita', descripcion: "", price: '$5400' },
+    { name: 'Limonada Menta y Jengibre 1 litro', descripcion: "", price: '$7100' }
 ];
 
 const ConAlcohol_items = [
-    { name: 'Cerveza en latas', descripcion: "(Consultar variedad)", price: '$3300' },
-    { name: 'Quilmes 1 litro', descripcion: "", price: '$4600' },
-    { name: 'Salta Negra 1 litro', descripcion: "", price: '$4600' },
-    { name: 'Heineken 1 litro', descripcion: "", price: '$7300' },
-    { name: 'Stella Artois 1 litro', descripcion: "", price: '$7300'}
+    { name: 'Cerveza en latas', descripcion: "(Consultar variedad)", price: 'Consultar' },
+    { name: 'Quilmes 1 litro', descripcion: "", price: '$6500' },
+    { name: 'Salta Negra 1 litro', descripcion: "", price: '$6800' },
+    { name: 'Heineken 1 litro', descripcion: "", price: '$10000' },
+    { name: 'Stella Artois 1 litro', descripcion: "", price: '$10000'}
 ];
 
 

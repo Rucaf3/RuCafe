@@ -9,21 +9,21 @@ import { useNavigate } from 'react-router-dom';
 export default function HamburguesaSandwiches() {
 
   const hamburguesaItems = [
-    { name: "Común / Clásica", descripcion: "Con lechuga, tomate y aderezos", price: "$6300" },
-    { name: "Super", descripcion: "Con Jamón, queso, lechuga, tomate y aderezos", price: "$7300" },
-    { name: "Ruca", descripcion: "Con Huevo, jamón, queso, lechuga, tomate y aderezos + Papas Fritas", price: "$8300" }
+    { name: "Común / Clásica", descripcion: "Con lechuga, tomate y aderezos", price: "$8300" },
+    { name: "Super", descripcion: "Con Jamón, queso, lechuga, tomate y aderezos", price: "11300" },
+    { name: "Ruca", descripcion: "Con Huevo, jamón, queso, lechuga, tomate y aderezos + Papas Fritas", price: "$12300" }
 ];
 
 const lomitoItems = [
-    { name: "Común / Clásico", descripcion: "Con lechuga, tomate y aderezos", price: "$7700" },
-    { name: "Super", descripcion: "Con Jamón, queso, lechuga, tomate y aderezos", price: "$8700" },
-    { name: "Ruca", descripcion: "Con Huevo, jamón, queso, lechuga, tomate y aderezos + Papas Fritas", price: "$9700" }
+    { name: "Común / Clásico", descripcion: "Con lechuga, tomate y aderezos", price: "$9700" },
+    { name: "Super", descripcion: "Con Jamón, queso, lechuga, tomate y aderezos", price: "$12700" },
+    { name: "Ruca", descripcion: "Con Huevo, jamón, queso, lechuga, tomate y aderezos + Papas Fritas", price: "$13700" }
 ];
 
 const milanesaItems = [
-    { name: "Común / Clásica", descripcion: "Con lechuga, tomate y aderezos", price: "$7100" },
-    { name: "Super", descripcion: "Con Jamón, queso, lechuga, tomate y aderezos", price: "$8100" },
-    { name: "Ruca", descripcion: "Con Huevo, jamón, queso, lechuga, tomate y aderezos + Papas Fritas", price: "$9100" }
+    { name: "Común / Clásica", descripcion: "Con lechuga, tomate y aderezos", price: "$9100" },
+    { name: "Super", descripcion: "Con Jamón, queso, lechuga, tomate y aderezos", price: "$12100" },
+    { name: "Ruca", descripcion: "Con Huevo, jamón, queso, lechuga, tomate y aderezos + Papas Fritas", price: "$14100" }
 ];
 
 

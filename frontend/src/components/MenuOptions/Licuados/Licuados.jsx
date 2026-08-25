@@ -7,11 +7,11 @@ import { useNavigate } from 'react-router-dom';
 export default function Licuados() {
 
   const L_items = [
-    { name: "Licuado de Chocolate", descripcion: "Leche + Chocolate + Hielo", price: "$4500" },
-    { name: "Licuado Simple (con leche o con agua)", descripcion: "Banana, frutilla, durazno, ananá, maracuyá", price: "$4500" },
-    { name: "Licuado Especial con jugo de naranja", descripcion: "Frutilla, durazno, maracuyá", price: "$5100" },
-    { name: "Frozen Frutal (con leche o con agua)", descripcion: "Incluye mix de banana, frutilla, durazno, ananá, maracuyá", price: "$5800" },
-    { name: "Frappuchino", descripcion: "Leche + Chocolate + Cafe + Crema Chantilly", price: "$6400" },
+    { name: "Licuado de Chocolate", descripcion: "Leche + Chocolate + Hielo", price: "$4800" },
+    { name: "Licuado Simple (con leche o con agua)", descripcion: "Banana, frutilla, durazno, ananá, maracuyá", price: "$4800" },
+    { name: "Licuado Especial con jugo de naranja", descripcion: "Frutilla, durazno, maracuyá", price: "$5400" },
+    { name: "Frozen Frutal (con leche o con agua)", descripcion: "Incluye mix de banana, frutilla, durazno, ananá, maracuyá", price: "$6100" },
+    { name: "Frappuchino", descripcion: "Leche + Chocolate + Cafe + Crema Chantilly", price: "$6700" },
 
 ];
 
